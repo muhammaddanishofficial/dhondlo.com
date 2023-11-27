@@ -174,7 +174,7 @@ nav a {
 /* Hero Section */
 .main-section {
   height: 70vh;
-  background: url("/images/CoverOne.png") center/cover no-repeat; /* Replace 'your-image.jpg' with your actual image */
+  background: url("./images/CoverOne.png") center/cover no-repeat; /* Replace 'your-image.jpg' with your actual image */
   display: flex;
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center items horizontally */
