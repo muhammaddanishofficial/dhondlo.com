@@ -316,7 +316,26 @@
         Copyright © 2023 <span>Dhondlo.com</span> All Rights Reserved
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+        var icon = document.querySelector(".icon");
+        icon.classList.toggle("active");
 
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu-open");
+      }
+
+      // JavaScript function to set the active class
+      function setActive(menuItem) {
+        // Remove the active class from all menu items
+        document.querySelectorAll("nav a").forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // Add the active class to the clicked menu item
+        document.getElementById(menuItem).classList.add("active");
+      }
+    </script>
     <!-- end -->
   </body>
 </html>

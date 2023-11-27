@@ -284,7 +284,26 @@
 
     <!-- end -->
      
+    <script>
+      function toggleMenu() {
+        var icon = document.querySelector(".icon");
+        icon.classList.toggle("active");
 
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu-open");
+      }
+
+      // JavaScript function to set the active class
+      function setActive(menuItem) {
+        // Remove the active class from all menu items
+        document.querySelectorAll("nav a").forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // Add the active class to the clicked menu item
+        document.getElementById(menuItem).classList.add("active");
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    
     <script src="./script.js"></script>
